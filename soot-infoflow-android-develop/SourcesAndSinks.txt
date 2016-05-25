@@ -1,0 +1,33 @@
+
+<android.app.Activity: android.content.Intent getIntent()> -> _SOURCE_
+%<com.example.testflow.MainActivity: android.content.Intent source()> -> _SOURCE_
+<com.example.testfield.MainActivity: int source()> -> _SOURCE_
+%<com.example.testflow.MainActivity: com.example.testflow.A read(com.example.testflow.A)> -> _SOURCE_
+%<com.example.testimplicit.AnotherActivity: int source()> -> _SOURCE_
+%<com.example.testalias.MainActivity: int source()> -> _SOURCE_
+%<com.example.testalias2.MainActivity: int source()> -> _SOURCE_
+%<com.example.testimplicit.MainActivity: int source()> -> _SOURCE_
+%<com.example.tesepath.MainActivity: int source()> -> _SOURCE_
+%<com.android.server.SystemServer: java.lang.Object getSystemService(java.lang.String)>-> _SOURCE_
+
+%<com.tencent.connect.auth.AuthDialog: void callJs(java.lang.String,java.lang.String)> -> _SINK_
+%<BrowserAuth.Auth.dialog: void callJs(java.lang.String, java.lang.String)> -> _SINK_
+<android.app.Activity: void startActivity(android.content.Intent)> -> _SINK_
+%<com.tencent.android.tpush.XGPushActivity: void pushClickedResult(android.content.Intent)> -> _SINK_
+<com.example.testfield.MainActivity: void sink(int)> -> _SINK_
+%<com.example.testflow.AnotherActivity: void sink(int)> -> _SINK_
+%<com.example.testimplicit.AnotherActivity: void sink(int)> -> _SINK_
+%<com.example.testalias.MainActivity: void sink(int)> -> _SINK_
+%<com.example.testalias2.MainActivity: void sink(int)> -> _SINK_
+%<com.example.testimplicit.MainActivity: void sink(int)> -> _SINK_
+%<com.example.tesepath.MainActivity: void sink(int)> -> _SINK_
+%<com.example.tesepath.MainActivity: void sink2(int)> -> _SINK_
+
+%<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.Stringandroid.app.PendingIntent,android.app.PendingIntent)> -> _SINK_
+
+%<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_
+
+
+%js×¢Èë
+%<android.app.Activity: android.content.Intent getIntent()> -> _SOURCE_
+%<com.tencent.connect.auth.AuthDialog: void callJs(java.lang.String,java.lang.String)> -> _SINK_ 
